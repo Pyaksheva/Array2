@@ -8,10 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         int[] arr = new int[]{8, 4, -2, 9};
-        ArrayService arrayService = new ArrayService();
-        PrintResult printResult = new PrintResult();
-        Controller controller = new Controller(arrayService, printResult);
+        Controller controller = new Controller();
         controller.sort(arr);
-
     }
 }

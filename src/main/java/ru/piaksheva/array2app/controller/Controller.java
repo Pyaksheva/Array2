@@ -5,13 +5,8 @@ import ru.piaksheva.array2app.view.PrintResult;
 
 public class Controller {
 
-    ArrayService arrayService;
-    PrintResult printResult;
-
-    public Controller(ArrayService arrayService, PrintResult printResult) {
-        this.arrayService = arrayService;
-        this.printResult = printResult;
-    }
+    ArrayService arrayService = new ArrayService();
+    PrintResult printResult = new PrintResult();
 
     public void sort(int[] arr) {
         arr = arrayService.sort(arr);
